@@ -1,0 +1,52 @@
+import { TrendingUp, AlertTriangle, Award } from 'lucide-react'
+import StatCard from '../components/StatCard'
+
+export default function CoreCapabilities() {
+  return (
+    <section className="py-32 relative overflow-hidden">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Core Capabilities</h2>
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+            Professional-grade performance analysis tools built for GPU driver validation and performance engineering
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div data-animate>
+            <StatCard
+              icon={<TrendingUp size={32} />}
+              label="Driver Comparison"
+              value="2-3"
+              unit="builds simultaneously"
+              status="optimal"
+            />
+            <p className="mt-4 text-text-secondary text-sm">Side-by-side FPS, variance, and stutter analysis across driver versions</p>
+          </div>
+
+          <div data-animate>
+            <StatCard
+              icon={<AlertTriangle size={32} />}
+              label="Regression Detection"
+              value="Auto"
+              unit="detected"
+              status="optimal"
+            />
+            <p className="mt-4 text-text-secondary text-sm">Threshold-based alerts highlight performance drops instantly</p>
+          </div>
+
+          <div data-animate>
+            <StatCard
+              icon={<Award size={32} />}
+              label="QA Scoring"
+              value="0–100"
+              unit="scale"
+              status="optimal"
+            />
+            <p className="mt-4 text-text-secondary text-sm">Automated PASS / WARNING / FAIL classification with detailed metrics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
