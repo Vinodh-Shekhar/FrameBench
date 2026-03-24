@@ -42,7 +42,7 @@ export default function ComparisonShowcase() {
           {activeTab === 'stable' ? (
             <div data-animate>
               <img
-                src="/image.png"
+                src="image.png"
                 alt="Stable performance benchmark"
                 className="w-full h-auto rounded-lg"
               />
@@ -67,7 +67,7 @@ export default function ComparisonShowcase() {
           ) : (
             <div data-animate>
               <img
-                src="/edited-photo.png"
+                src="edited-photo.png"
                 alt="Driver comparison benchmark"
                 className="w-full h-auto rounded-lg"
               />
