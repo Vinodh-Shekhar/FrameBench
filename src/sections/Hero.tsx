@@ -38,7 +38,11 @@ export default function Hero() {
                 <Download size={20} />
                 Download for Windows
               </Button>
-              <Button variant="secondary" size="lg">
+              <Button 
+                variant="secondary" 
+                size="lg"
+                onClick={() => window.open('https://vinodh-framebench-analyzer.bolt.host/', '_blank')}
+              >
                 <Play size={20} />
                 View Demo
               </Button>
