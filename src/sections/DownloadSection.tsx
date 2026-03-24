@@ -20,7 +20,7 @@ export default function DownloadSection() {
               variant="primary" 
               size="lg" 
               className="text-lg"
-              href="https://github.com/Vinodh-Shekhar/FrameBench-Analyzer/releases/tag/v1.0.5"
+              href="https://github.com/Vinodh-Shekhar/FrameBench/releases"
             >
               <Download size={24} />
               Download .exe
