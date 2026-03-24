@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 export default function DownloadSection() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id="download-section" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
       </div>

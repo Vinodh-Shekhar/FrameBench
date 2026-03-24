@@ -34,7 +34,15 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" size="lg" className="group">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="group"
+                onClick={() => {
+                  const element = document.getElementById('download-section');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 <Download size={20} />
                 Download for Windows
               </Button>
