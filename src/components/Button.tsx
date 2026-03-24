@@ -6,6 +6,7 @@ interface ButtonProps {
   size?: 'sm' | 'md' | 'lg'
   className?: string
   onClick?: () => void
+  href?: string
 }
 
 export default function Button({
@@ -14,6 +15,7 @@ export default function Button({
   size = 'md',
   className = '',
   onClick,
+  href,
 }: ButtonProps) {
   const baseStyles = 'font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'
 
@@ -28,10 +30,25 @@ export default function Button({
     lg: 'px-8 py-4 text-lg',
   }
 
+  const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={buttonClasses}
+      >
+        {children}
+      </a>
+    )
+  }
+
   return (
     <button
       onClick={onClick}
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={buttonClasses}
     >
       {children}
     </button>

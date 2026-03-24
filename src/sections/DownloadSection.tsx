@@ -16,7 +16,12 @@ export default function DownloadSection() {
           </p>
 
           <div className="flex gap-6 justify-center items-center flex-wrap mb-12">
-            <Button variant="primary" size="lg" className="text-lg">
+            <Button 
+              variant="primary" 
+              size="lg" 
+              className="text-lg"
+              href="https://github.com/Vinodh-Shekhar/FrameBench-Analyzer/releases/tag/v1.0.5"
+            >
               <Download size={24} />
               Download .exe
             </Button>
