@@ -23,7 +23,7 @@ export default function DownloadSection() {
               href="https://github.com/Vinodh-Shekhar/FrameBench/releases"
             >
               <Download size={24} />
-              Download .exe
+              Download
             </Button>
           </div>
 
