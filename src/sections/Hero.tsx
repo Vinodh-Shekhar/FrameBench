@@ -4,7 +4,7 @@ import AnimatedGraph from '../components/AnimatedGraph'
 
 export default function Hero() {
   return (
-    <section className="relative py-20 overflow-hidden flex items-center">
+    <section className="relative py-12 overflow-hidden flex items-center">
       {/* Background grid */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent"></div>
