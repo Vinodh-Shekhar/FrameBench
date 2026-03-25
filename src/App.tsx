@@ -29,11 +29,11 @@ export default function App() {
   return (
     <div className="w-full bg-background text-text-primary overflow-x-hidden">
       <Hero />
+      <ComparisonShowcase />
       <CoreCapabilities />
       <Differentiation />
       <UseCases />
       <FeatureDeepDive />
-      <ComparisonShowcase />
       <CredibilitySection />
       <DownloadSection />
       <Footer />
