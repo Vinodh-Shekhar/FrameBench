@@ -23,7 +23,7 @@ export default function ComparisonShowcase() {
                   : 'glass glow-border text-accent hover:shadow-glow'
               }`}
             >
-              Stable Performance
+              Performance Metrics
             </button>
             <button
               onClick={() => setActiveTab('comparison')}
@@ -43,11 +43,11 @@ export default function ComparisonShowcase() {
             <div data-animate>
               <img
                 src="image.png"
-                alt="Stable performance benchmark"
+                alt="Performance metrics benchmark"
                 className="w-full h-auto rounded-lg"
               />
               <div className="mt-6 p-4 bg-surface rounded-lg border border-accent/20">
-                <h3 className="text-lg font-semibold text-accent mb-2">Stable Frame Timing</h3>
+                <h3 className="text-lg font-semibold text-accent mb-2">Performance Metrics Analysis</h3>
                 <ul className="space-y-2 text-text-secondary text-sm">
                   <li className="flex gap-2">
                     <span className="text-accent">›</span>
